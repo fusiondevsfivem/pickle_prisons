@@ -106,7 +106,7 @@ Config.Activities = {
             ["lift"] = {
                 label = "Lift Weights",
                 rewards = { -- Rewards for completing the section.
-                    {type = "xp", name = "strength", amount = 1000},
+                    {type = "Setence", amount = 1000},
                 },
                 process = function(data) -- Section function. 
                     local ped = PlayerPedId()

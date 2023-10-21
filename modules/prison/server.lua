@@ -52,6 +52,8 @@ function GiveRewards(source, rewards)
             Inventory.AddWeapon(source, reward.name, reward.amount, reward.createItem and reward.createItem(craftingData) or nil)
         elseif Config.XPEnabled and reward.type == "xp" then 
             AddPlayerXP(source, reward.name, reward.amount)
+        elseif reward.type == 'Setence'
+            Prisoners[source].time -= reward.amount
         end
     end
 end
